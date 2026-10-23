@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZIROX DZTtech - Premier PC Hardware & Esports Gear</title>
+    <title>ZIROX DZTtech - Premier Gaming Peripherals & PC Hardware</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -43,7 +43,6 @@
             font-family: 'Cairo', 'Inter', sans-serif;
         }
 
-        /* Neon Glowing Utilities */
         .neon-glow-cyan {
             box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
         }
@@ -56,9 +55,6 @@
 
         .text-glow-cyan {
             text-shadow: 0 0 12px rgba(0, 240, 255, 0.6);
-        }
-        .text-glow-purple {
-            text-shadow: 0 0 12px rgba(112, 0, 255, 0.6);
         }
 
         .glass-card {
@@ -73,7 +69,6 @@
             transform: translateY(-5px);
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -110,14 +105,12 @@
             <!-- Navigation Links -->
             <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-semibold text-gray-300">
                 <a href="#features" data-i18n="nav_why" class="hover:text-cyber-cyan transition-colors">لماذا نحن</a>
-                <a href="#catalog" data-i18n="nav_catalog" class="hover:text-cyber-cyan transition-colors">الكتالوج</a>
-                <a href="#order" data-i18n="nav_order" class="hover:text-cyber-pink transition-colors">الطلب السريع</a>
+                <a href="#categories" data-i18n="nav_categories" class="hover:text-cyber-cyan transition-colors">المنتجات والمرئيات</a>
+                <a href="#inquiry" data-i18n="nav_inquiry" class="hover:text-cyber-pink transition-colors">طلب واستفسار</a>
             </nav>
 
             <!-- Language Switcher & COD Badge -->
             <div class="flex items-center space-x-4 space-x-reverse">
-                
-                <!-- Language Selector Dropdown -->
                 <div class="relative inline-block text-left">
                     <div class="flex rounded-xl bg-cyber-border/80 p-1 border border-cyber-border">
                         <button onclick="setLanguage('ar')" id="btn-ar" class="px-2.5 py-1 text-xs font-bold rounded-lg transition-all bg-cyber-cyan text-black">عربي</button>
@@ -126,10 +119,9 @@
                     </div>
                 </div>
 
-                <!-- COD Badge Button -->
-                <a href="#order" class="hidden sm:flex px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-cyber-cyan to-cyber-purple text-black hover:opacity-90 transition-all neon-glow-cyan items-center space-x-2 space-x-reverse">
+                <a href="#inquiry" class="hidden sm:flex px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-cyber-cyan to-cyber-purple text-black hover:opacity-90 transition-all neon-glow-cyan items-center space-x-2 space-x-reverse">
                     <i class="fa-solid fa-truck-fast"></i>
-                    <span data-i18n="header_cod">الدفع عند الاستلام</span>
+                    <span data-i18n="header_cod">توصيل لـ 58 ولاية</span>
                 </a>
             </div>
 
@@ -138,7 +130,6 @@
 
     <!-- Hero Section -->
     <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
-        <!-- Neon Glow Backdrops -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyber-cyan/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div class="absolute top-1/3 right-10 w-96 h-96 bg-cyber-purple/20 rounded-full blur-[100px] pointer-events-none"></div>
 
@@ -146,31 +137,31 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
                 <!-- Hero Text Block -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-right" id="hero-text-container">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
                     
                     <div class="inline-flex items-center space-x-2 space-x-reverse px-4 py-2 rounded-full glass-card border border-cyber-cyan/30 text-cyber-cyan text-xs font-bold uppercase tracking-wider">
                         <span class="w-2 h-2 rounded-full bg-cyber-cyan animate-ping"></span>
-                        <span data-i18n="hero_badge">المتجر الرسمي في الجزائر • توصيل لـ 58 ولاية</span>
+                        <span data-i18n="hero_badge">وجهة الجيمرز في الجزائر • توصيل لـ 58 ولاية</span>
                     </div>
 
                     <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
-                        <span data-i18n="hero_title_1">طوّر منصة ألعابك مع</span> <br>
+                        <span data-i18n="hero_title_1">عتاد الألعاب والقطع الأصلية</span> <br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan via-cyber-purple to-cyber-pink text-glow-cyan">ZIROX DZTtech</span>
                     </h1>
 
                     <p class="text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed" data-i18n="hero_description">
-                        أفضل قطع الكمبيوتر، كروت الشاشة، المعالجات واكسسوارات الألعاب الأصلية مع ضمان الجودة والدفع عند الاستلام.
+                        نوفر لكم أحدث لوحات المفاتيح، السماعات احترافية، الماوسات الدقيقة، بالإضافة إلى المعالجات، لوحات الأم، والرامات الأصلية.
                     </p>
 
                     <!-- CTA Buttons -->
                     <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 sm:space-x-reverse">
-                        <a href="#order" class="w-full sm:w-auto px-8 py-4 rounded-xl font-extrabold text-black bg-cyber-cyan hover:bg-white transition-all neon-glow-cyan text-center flex items-center justify-center space-x-3 space-x-reverse">
-                            <span data-i18n="hero_cta_order">اطلب الآن والدفع عند الاستلام</span>
+                        <a href="#inquiry" class="w-full sm:w-auto px-8 py-4 rounded-xl font-extrabold text-black bg-cyber-cyan hover:bg-white transition-all neon-glow-cyan text-center flex items-center justify-center space-x-3 space-x-reverse">
+                            <span data-i18n="hero_cta_inquiry">استفسر عن القطع أو احجز طلبيتك</span>
                             <i class="fa-solid fa-arrow-left ltr-icon"></i>
                         </a>
-                        <a href="#catalog" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-gray-300 glass-card hover:border-cyber-cyan/50 hover:text-white transition-all text-center flex items-center justify-center space-x-2 space-x-reverse">
+                        <a href="#categories" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-gray-300 glass-card hover:border-cyber-cyan/50 hover:text-white transition-all text-center flex items-center justify-center space-x-2 space-x-reverse">
                             <i class="fa-solid fa-gamepad text-cyber-pink"></i>
-                            <span data-i18n="hero_cta_catalog">تصفح المنتجات</span>
+                            <span data-i18n="hero_cta_categories">تصفح أقسام العتاد</span>
                         </a>
                     </div>
 
@@ -182,31 +173,42 @@
                         </div>
                         <div>
                             <div class="text-2xl font-black text-cyber-pink">100%</div>
-                            <div class="text-xs text-gray-400" data-i18n="stat_cod">الدفع عند الفحص</div>
+                            <div class="text-xs text-gray-400" data-i18n="stat_cod">الدفع عند الاستلام</div>
                         </div>
                         <div>
                             <div class="text-2xl font-black text-white" data-i18n="stat_guarantee_val">أصلي</div>
-                            <div class="text-xs text-gray-400" data-i18n="stat_guarantee">عتاد مضمون ومجرب</div>
+                            <div class="text-xs text-gray-400" data-i18n="stat_guarantee">منتجات مضمونة ومجربة</div>
                         </div>
                     </div>
 
                 </div>
 
-                <!-- Hero Interactive Visual Card -->
+                <!-- Hero Visual Grid -->
                 <div class="lg:col-span-5">
                     <div class="relative mx-auto max-w-md lg:max-w-none">
                         <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyber-cyan via-cyber-purple to-cyber-pink blur-md opacity-40"></div>
-                        <div class="relative glass-card rounded-2xl p-6 border border-cyber-border">
-                            <div class="aspect-square w-full rounded-xl bg-cyber-bg/90 flex flex-col items-center justify-center relative overflow-hidden border border-cyber-border/80 group">
-                                <div class="absolute inset-0 bg-gradient-to-tr from-cyber-purple/20 to-cyber-cyan/20 opacity-50 group-hover:opacity-100 transition-opacity"></div>
-                                <i class="fa-solid fa-microchip text-8xl text-cyber-cyan mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-                                <span class="text-xs font-mono uppercase tracking-widest text-cyber-pink font-bold" data-i18n="hero_card_tag">تجميعات وتطوير الـ PC</span>
-                                <span class="text-xl font-extrabold text-white mt-1">High-End PC Hardware</span>
+                        <div class="relative glass-card rounded-2xl p-6 border border-cyber-border grid grid-cols-2 gap-4">
+                            
+                            <div class="p-4 rounded-xl bg-cyber-bg/90 border border-cyber-border text-center">
+                                <i class="fa-solid fa-keyboard text-4xl text-cyber-cyan mb-2"></i>
+                                <div class="text-xs font-bold text-white" data-i18n="hero_icon_1">Keyboards</div>
                             </div>
-                            <div class="mt-4 flex items-center justify-between text-sm">
-                                <span class="text-gray-400"><i class="fa-solid fa-shield-halved text-cyber-cyan mr-1"></i> <span data-i18n="hero_card_warranty">ضمان محلي موثوق</span></span>
-                                <span class="text-cyber-cyan font-bold" data-i18n="hero_card_stock">متوفر في المخزون</span>
+                            
+                            <div class="p-4 rounded-xl bg-cyber-bg/90 border border-cyber-border text-center">
+                                <i class="fa-solid fa-headset text-4xl text-cyber-pink mb-2"></i>
+                                <div class="text-xs font-bold text-white" data-i18n="hero_icon_2">Headsets</div>
                             </div>
+
+                            <div class="p-4 rounded-xl bg-cyber-bg/90 border border-cyber-border text-center">
+                                <i class="fa-solid fa-computer-mouse text-4xl text-cyber-purple mb-2"></i>
+                                <div class="text-xs font-bold text-white" data-i18n="hero_icon_3">Mice</div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-cyber-bg/90 border border-cyber-border text-center">
+                                <i class="fa-solid fa-microchip text-4xl text-cyber-cyan mb-2"></i>
+                                <div class="text-xs font-bold text-white" data-i18n="hero_icon_4">CPUs & MBs & RAM</div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -219,13 +221,11 @@
     <section id="features" class="py-20 relative bg-cyber-card/40 border-y border-cyber-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-xs font-extrabold uppercase tracking-widest text-cyber-cyan mb-2" data-i18n="why_tag">خدمة احترافية</h2>
-                <p class="text-3xl font-extrabold text-white sm:text-4xl" data-i18n="why_title">لماذا يفضل الجيمرز متجر ZIROX؟</p>
+                <h2 class="text-xs font-extrabold uppercase tracking-widest text-cyber-cyan mb-2" data-i18n="why_tag">خدمة موثوقة</h2>
+                <p class="text-3xl font-extrabold text-white sm:text-4xl" data-i18n="why_title">لماذا تختار ZIROX DZTtech؟</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
-                <!-- Card 1 -->
                 <div class="glass-card rounded-2xl p-6 relative group">
                     <div class="w-12 h-12 rounded-xl bg-cyber-cyan/10 border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan text-xl mb-5 group-hover:bg-cyber-cyan group-hover:text-black transition-colors">
                         <i class="fa-solid fa-hand-holding-dollar"></i>
@@ -234,155 +234,143 @@
                     <p class="text-sm text-gray-400 leading-relaxed" data-i18n="feature_1_desc">تسوق بآمان تام. لا تدفع أي شيء حتى تستلم طردك وتتفحصه بنفسك.</p>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="glass-card rounded-2xl p-6 relative group">
                     <div class="w-12 h-12 rounded-xl bg-cyber-purple/10 border border-cyber-purple/30 flex items-center justify-center text-cyber-purple text-xl mb-5 group-hover:bg-cyber-purple group-hover:text-white transition-colors">
                         <i class="fa-solid fa-truck-fast"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="feature_2_title">توصيل لكل الولايات</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed" data-i18n="feature_2_desc">شحن سريع إلى 58 ولاية، مع خيار التوصيل للمنزل أو الاستلام من المكتب.</p>
+                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="feature_2_title">توصيل لـ 58 ولاية</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed" data-i18n="feature_2_desc">توصيل سريع وسلس لجميع الولايات إلى باب المنزل أو مكتب الاستلام.</p>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="glass-card rounded-2xl p-6 relative group">
                     <div class="w-12 h-12 rounded-xl bg-cyber-pink/10 border border-cyber-pink/30 flex items-center justify-center text-cyber-pink text-xl mb-5 group-hover:bg-cyber-pink group-hover:text-white transition-colors">
-                        <i class="fa-solid fa-square-check"></i>
+                        <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="feature_3_title">قطع أصلية 100%</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed" data-i18n="feature_3_desc">جميع المنتجات جديدة كلياً وغير مستعملة ومستوردة من الموزعين الرسميين.</p>
+                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="feature_3_title">منتجات أصلية 100%</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed" data-i18n="feature_3_desc">معدات وقطع أصلية جديدة بالكامل ومختارة بعناية لعشاق الـ Esports.</p>
                 </div>
 
-                <!-- Card 4 -->
                 <div class="glass-card rounded-2xl p-6 relative group">
                     <div class="w-12 h-12 rounded-xl bg-cyber-cyan/10 border border-cyber-cyan/30 flex items-center justify-center text-cyber-cyan text-xl mb-5 group-hover:bg-cyber-cyan group-hover:text-black transition-colors">
-                        <i class="fa-solid fa-headset"></i>
+                        <i class="fa-solid fa-comments"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="feature_4_title">دعم وتوافق عتاد الـ PC</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed" data-i18n="feature_4_desc">نساعدك في التأكد من توافق القطع مع لوحة الأم والمعالج الخاص بك قبل الشراء.</p>
+                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="feature_4_title">استشارات وتوافق</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed" data-i18n="feature_4_desc">نساعدك في اختيار القطع المتوافقة مع جهازك والإجابة على كل استفساراتك.</p>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Product Catalog Grid -->
-    <section id="catalog" class="py-24">
+    <!-- Categories Showcase -->
+    <section id="categories" class="py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
-                <div>
-                    <h2 class="text-xs font-extrabold uppercase tracking-widest text-cyber-pink mb-2" data-i18n="catalog_tag">أحدث الأجهزة المتوفرة</h2>
-                    <p class="text-3xl font-extrabold text-white sm:text-4xl" data-i18n="catalog_title">قائمة المنتجات الأكثر طلباً</p>
-                </div>
-                <p class="text-gray-400 text-sm mt-2 md:mt-0" data-i18n="catalog_subtitle">اضغط على أي منتج لملء نموذج الطلب فوراً</p>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-extrabold uppercase tracking-widest text-cyber-pink mb-2" data-i18n="cat_tag">تخصصنا الأساسي</h2>
+                <p class="text-3xl font-extrabold text-white sm:text-4xl" data-i18n="cat_title">الأقسام والمنتجات المتاحة قريباً</p>
+                <p class="text-gray-400 text-sm mt-3" data-i18n="cat_subtitle">اختر القسم الذي تبحث عنه لإرسال طلبك أو الاستفسار عن الموديلات القادمة</p>
             </div>
 
-            <!-- Products Grid -->
+            <!-- Categories Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 
-                <!-- Product 1: GPU -->
-                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between border border-cyber-border group">
-                    <div class="p-6">
-                        <div class="w-full h-48 bg-cyber-bg rounded-xl flex flex-col items-center justify-center mb-6 relative overflow-hidden border border-cyber-border/60">
-                            <i class="fa-solid fa-memory text-6xl text-cyber-cyan group-hover:scale-110 transition-transform"></i>
-                            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-cyber-pink/20 border border-cyber-pink/40 text-cyber-pink text-xs font-bold" data-i18n="badge_hot">الأكثر طلباً</span>
+                <!-- Category 1: Keyboards -->
+                <div class="glass-card rounded-2xl p-6 border border-cyber-border flex flex-col justify-between group">
+                    <div>
+                        <div class="w-full h-40 bg-cyber-bg rounded-xl flex items-center justify-center mb-6 relative overflow-hidden border border-cyber-border/60">
+                            <i class="fa-solid fa-keyboard text-6xl text-cyber-cyan group-hover:scale-110 transition-transform"></i>
+                            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyber-cyan text-xs font-bold" data-i18n="status_coming">قريباً في المخزون</span>
                         </div>
-                        <h3 class="text-lg font-bold text-white mb-1">NVIDIA RTX 4060 8GB GDDR6</h3>
-                        <p class="text-xs text-gray-400 mb-4" data-i18n="p1_spec">DLSS 3 • Ray Tracing • Low Power Consumption</p>
-                        <div class="text-2xl font-black text-cyber-cyan">68,000 <span class="text-xs text-gray-300" data-i18n="currency">دج</span></div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-i18n="cat_1_title">Keyboards (لوحات المفاتيح)</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-4" data-i18n="cat_1_desc">لوحات ميكانيكية احترافية، لاسلكية وسلكية، وإضاءة RGB مخصصة للالعاب.</p>
                     </div>
-                    <div class="p-6 pt-0">
-                        <button onclick="selectProduct('NVIDIA RTX 4060 8GB', 68000)" class="w-full py-3 rounded-xl bg-cyber-cyan/10 hover:bg-cyber-cyan hover:text-black border border-cyber-cyan/40 text-cyber-cyan font-bold transition-all flex items-center justify-center space-x-2 space-x-reverse">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span data-i18n="btn_order_now">اطلب الآن</span>
-                        </button>
-                    </div>
+                    <button onclick="selectCategory('Keyboards')" class="w-full py-3 rounded-xl bg-cyber-cyan/10 hover:bg-cyber-cyan hover:text-black border border-cyber-cyan/40 text-cyber-cyan font-bold transition-all flex items-center justify-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-bell"></i>
+                        <span data-i18n="btn_inquire_cat">طلب / استفسار</span>
+                    </button>
                 </div>
 
-                <!-- Product 2: CPU -->
-                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between border border-cyber-border group">
-                    <div class="p-6">
-                        <div class="w-full h-48 bg-cyber-bg rounded-xl flex flex-col items-center justify-center mb-6 relative overflow-hidden border border-cyber-border/60">
-                            <i class="fa-solid fa-microchip text-6xl text-cyber-purple group-hover:scale-110 transition-transform"></i>
+                <!-- Category 2: Headsets -->
+                <div class="glass-card rounded-2xl p-6 border border-cyber-border flex flex-col justify-between group">
+                    <div>
+                        <div class="w-full h-40 bg-cyber-bg rounded-xl flex items-center justify-center mb-6 relative overflow-hidden border border-cyber-border/60">
+                            <i class="fa-solid fa-headset text-6xl text-cyber-pink group-hover:scale-110 transition-transform"></i>
+                            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-cyber-pink/10 border border-cyber-pink/30 text-cyber-pink text-xs font-bold" data-i18n="status_coming">قريباً في المخزون</span>
                         </div>
-                        <h3 class="text-lg font-bold text-white mb-1">AMD Ryzen 5 5600X Processor</h3>
-                        <p class="text-xs text-gray-400 mb-4" data-i18n="p2_spec">6 Cores / 12 Threads • 4.6GHz Boost • AM4</p>
-                        <div class="text-2xl font-black text-cyber-cyan">28,500 <span class="text-xs text-gray-300" data-i18n="currency">دج</span></div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-i18n="cat_2_title">Headsets (السماعات)</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-4" data-i18n="cat_2_desc">سماعات رأس تحيط بالصوت الدقيق للـ Esports، مايكرفونات نقية وراحة تامة أثناء اللعب.</p>
                     </div>
-                    <div class="p-6 pt-0">
-                        <button onclick="selectProduct('AMD Ryzen 5 5600X Processor', 28500)" class="w-full py-3 rounded-xl bg-cyber-cyan/10 hover:bg-cyber-cyan hover:text-black border border-cyber-cyan/40 text-cyber-cyan font-bold transition-all flex items-center justify-center space-x-2 space-x-reverse">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span data-i18n="btn_order_now">اطلب الآن</span>
-                        </button>
-                    </div>
+                    <button onclick="selectCategory('Headsets')" class="w-full py-3 rounded-xl bg-cyber-pink/10 hover:bg-cyber-pink hover:text-white border border-cyber-pink/40 text-cyber-pink font-bold transition-all flex items-center justify-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-bell"></i>
+                        <span data-i18n="btn_inquire_cat">طلب / استفسار</span>
+                    </button>
                 </div>
 
-                <!-- Product 3: RAM -->
-                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between border border-cyber-border group">
-                    <div class="p-6">
-                        <div class="w-full h-48 bg-cyber-bg rounded-xl flex flex-col items-center justify-center mb-6 relative overflow-hidden border border-cyber-border/60">
-                            <i class="fa-solid fa-server text-6xl text-cyber-pink group-hover:scale-110 transition-transform"></i>
+                <!-- Category 3: Mice -->
+                <div class="glass-card rounded-2xl p-6 border border-cyber-border flex flex-col justify-between group">
+                    <div>
+                        <div class="w-full h-40 bg-cyber-bg rounded-xl flex items-center justify-center mb-6 relative overflow-hidden border border-cyber-border/60">
+                            <i class="fa-solid fa-computer-mouse text-6xl text-cyber-purple group-hover:scale-110 transition-transform"></i>
+                            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-cyber-purple/10 border border-cyber-purple/30 text-cyber-purple text-xs font-bold" data-i18n="status_coming">قريباً في المخزون</span>
                         </div>
-                        <h3 class="text-lg font-bold text-white mb-1">Corsair Vengeance 32GB DDR5</h3>
-                        <p class="text-xs text-gray-400 mb-4" data-i18n="p3_spec">2x16GB Kit • 6000MHz Speed • Intel XMP 3.0</p>
-                        <div class="text-2xl font-black text-cyber-cyan">22,000 <span class="text-xs text-gray-300" data-i18n="currency">دج</span></div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-i18n="cat_3_title">Gaming Mice (الماوسات)</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-4" data-i18n="cat_3_desc">فأرات ألعاب خفيفة الوزن ذات دقة DPI عالية واستجابة فورية للألعاب التنافسية.</p>
                     </div>
-                    <div class="p-6 pt-0">
-                        <button onclick="selectProduct('Corsair Vengeance 32GB DDR5 RAM', 22000)" class="w-full py-3 rounded-xl bg-cyber-cyan/10 hover:bg-cyber-cyan hover:text-black border border-cyber-cyan/40 text-cyber-cyan font-bold transition-all flex items-center justify-center space-x-2 space-x-reverse">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span data-i18n="btn_order_now">اطلب الآن</span>
-                        </button>
-                    </div>
+                    <button onclick="selectCategory('Mice')" class="w-full py-3 rounded-xl bg-cyber-purple/10 hover:bg-cyber-purple hover:text-white border border-cyber-purple/40 text-cyber-purple font-bold transition-all flex items-center justify-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-bell"></i>
+                        <span data-i18n="btn_inquire_cat">طلب / استفسار</span>
+                    </button>
                 </div>
 
-                <!-- Product 4: SSD -->
-                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between border border-cyber-border group">
-                    <div class="p-6">
-                        <div class="w-full h-48 bg-cyber-bg rounded-xl flex flex-col items-center justify-center mb-6 relative overflow-hidden border border-cyber-border/60">
-                            <i class="fa-solid fa-hard-drive text-6xl text-cyber-cyan group-hover:scale-110 transition-transform"></i>
+                <!-- Category 4: Hardware -->
+                <div class="glass-card rounded-2xl p-6 border border-cyber-border flex flex-col justify-between group">
+                    <div>
+                        <div class="w-full h-40 bg-cyber-bg rounded-xl flex items-center justify-center mb-6 relative overflow-hidden border border-cyber-border/60">
+                            <i class="fa-solid fa-microchip text-6xl text-cyber-cyan group-hover:scale-110 transition-transform"></i>
+                            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyber-cyan text-xs font-bold" data-i18n="status_coming">قريباً في المخزون</span>
                         </div>
-                        <h3 class="text-lg font-bold text-white mb-1">1TB NVMe M.2 Gen4 SSD</h3>
-                        <p class="text-xs text-gray-400 mb-4" data-i18n="p4_spec">Read speed up to 5000 MB/s • Fast Game Loads</p>
-                        <div class="text-2xl font-black text-cyber-cyan">13,500 <span class="text-xs text-gray-300" data-i18n="currency">دج</span></div>
+                        <h3 class="text-xl font-bold text-white mb-2" data-i18n="cat_4_title">CPUs, Motherboards & RAM</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-4" data-i18n="cat_4_desc">معالجات حديثة، لوحات أم متطورة، وذكريات رام عالية السرعة لتطوير جهازك.</p>
                     </div>
-                    <div class="p-6 pt-0">
-                        <button onclick="selectProduct('1TB NVMe M.2 Gen4 SSD', 13500)" class="w-full py-3 rounded-xl bg-cyber-cyan/10 hover:bg-cyber-cyan hover:text-black border border-cyber-cyan/40 text-cyber-cyan font-bold transition-all flex items-center justify-center space-x-2 space-x-reverse">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span data-i18n="btn_order_now">اطلب الآن</span>
-                        </button>
-                    </div>
+                    <button onclick="selectCategory('Hardware (CPU / Motherboard / RAM)')" class="w-full py-3 rounded-xl bg-cyber-cyan/10 hover:bg-cyber-cyan hover:text-black border border-cyber-cyan/40 text-cyber-cyan font-bold transition-all flex items-center justify-center space-x-2 space-x-reverse">
+                        <i class="fa-solid fa-bell"></i>
+                        <span data-i18n="btn_inquire_cat">طلب / استفسار</span>
+                    </button>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Interactive COD Checkout Section -->
-    <section id="order" class="py-20 bg-cyber-card/60 relative border-t border-cyber-border">
+    <!-- Inquiry / Pre-order Form -->
+    <section id="inquiry" class="py-20 bg-cyber-card/60 relative border-t border-cyber-border">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center mb-10">
                 <span class="inline-block px-3 py-1 rounded-full bg-cyber-pink/20 text-cyber-pink text-xs font-bold uppercase tracking-widest mb-3" data-i18n="form_tag">
-                    استمارة الطلب المباشر
+                    تواصل مباشر
                 </span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white" data-i18n="form_title">تأكيد الطلب - الدفع عند الاستلام</h2>
-                <p class="text-gray-400 text-sm mt-2" data-i18n="form_subtitle">قم بملء معلوماتك وسنتصل بك عبر الهاتف لتأكيد الشحن قبل الإرسال.</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white" data-i18n="form_title">نموذج الطلب والاستفسار عن العتاد</h2>
+                <p class="text-gray-400 text-sm mt-2" data-i18n="form_subtitle">أخبرنا بالمنتج أو القطعة التي تريدها، وسنتصل بك فور توفرها مع تفاصيل السعر والشحن.</p>
             </div>
 
-            <!-- Interactive Checkout Form Card -->
+            <!-- Inquiry Form Card -->
             <div class="glass-card rounded-2xl p-6 sm:p-10 border border-cyber-border relative neon-glow-cyan">
-                <form id="codOrderForm" onsubmit="handleOrderSubmit(event)" class="space-y-6">
+                <form id="inquiryForm" onsubmit="handleInquirySubmit(event)" class="space-y-6">
                     
-                    <!-- Product Selection -->
+                    <!-- Selected Category / Product Type -->
                     <div>
-                        <label class="block text-sm font-semibold text-gray-200 mb-2" data-i18n="label_product">
-                            اختر المنتج <span class="text-cyber-pink">*</span>
+                        <label class="block text-sm font-semibold text-gray-200 mb-2" data-i18n="label_interest">
+                            نوع المنتجات المطلوبة <span class="text-cyber-pink">*</span>
                         </label>
-                        <select id="productSelect" onchange="updateSummary()" required class="w-full bg-cyber-bg border border-cyber-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyber-cyan transition-colors">
-                            <option value="" data-i18n="opt_choose_product">-- اختر المنتج من القائمة --</option>
-                            <option value="NVIDIA RTX 4060 8GB" data-price="68000">NVIDIA RTX 4060 8GB GDDR6 (68,000 DA)</option>
-                            <option value="AMD Ryzen 5 5600X Processor" data-price="28500">AMD Ryzen 5 5600X Processor (28,500 DA)</option>
-                            <option value="Corsair Vengeance 32GB DDR5 RAM" data-price="22000">Corsair Vengeance 32GB DDR5 RAM (22,000 DA)</option>
-                            <option value="1TB NVMe M.2 Gen4 SSD" data-price="13500">1TB NVMe M.2 Gen4 SSD (13,500 DA)</option>
+                        <select id="interestSelect" required class="w-full bg-cyber-bg border border-cyber-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyber-cyan transition-colors">
+                            <option value="" data-i18n="opt_choose_interest">-- اختر الفئة --</option>
+                            <option value="Keyboards">Keyboards (لوحات المفاتيح)</option>
+                            <option value="Headsets">Headsets (السماعات)</option>
+                            <option value="Mice">Gaming Mice (الماوسات)</option>
+                            <option value="Processors (CPU)">Processors / CPUs (المعالجات)</option>
+                            <option value="Motherboards">Motherboards (لوحات الأم)</option>
+                            <option value="RAM Memories">RAM Memories (الرامات)</option>
+                            <option value="Multiple Items">عدة قطع / تجميعية عتاد</option>
                         </select>
                     </div>
 
@@ -404,57 +392,35 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <!-- Wilaya Selection -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2" data-i18n="label_wilaya">
-                                الولاية <span class="text-cyber-pink">*</span>
-                            </label>
-                            <select id="wilayaSelect" onchange="updateSummary()" required class="w-full bg-cyber-bg border border-cyber-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyber-cyan transition-colors">
-                                <option value="" data-i18n="opt_choose_wilaya">-- اختر الولاية --</option>
-                                <option value="16 - Alger" data-shipping="600">16 - Alger (600 DA)</option>
-                                <option value="31 - Oran" data-shipping="800">31 - Oran (800 DA)</option>
-                                <option value="25 - Constantine" data-shipping="800">25 - Constantine (800 DA)</option>
-                                <option value="09 - Blida" data-shipping="600">09 - Blida (600 DA)</option>
-                                <option value="19 - Sétif" data-shipping="800">19 - Sétif (800 DA)</option>
-                                <option value="35 - Boumerdès" data-shipping="600">35 - Boumerdès (600 DA)</option>
-                                <option value="Other Wilaya" data-shipping="900">باقي الولايات (900 DA)</option>
-                            </select>
-                        </div>
-
-                        <!-- Delivery Type -->
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-200 mb-2" data-i18n="label_delivery_type">
-                                نوع التوصيل <span class="text-cyber-pink">*</span>
-                            </label>
-                            <select id="deliveryType" onchange="updateSummary()" required class="w-full bg-cyber-bg border border-cyber-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyber-cyan transition-colors">
-                                <option value="Home Delivery" data-i18n="opt_home_delivery">توصيل إلى باب المنزل (Home)</option>
-                                <option value="Desk Delivery" data-i18n="opt_desk_delivery">استلام من المكتب (Stop Desk)</option>
-                            </select>
-                        </div>
+                    <!-- Wilaya Selection -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-200 mb-2" data-i18n="label_wilaya">
+                            الولاية <span class="text-cyber-pink">*</span>
+                        </label>
+                        <select id="wilayaSelect" required class="w-full bg-cyber-bg border border-cyber-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyber-cyan transition-colors">
+                            <option value="" data-i18n="opt_choose_wilaya">-- اختر الولاية --</option>
+                            <option value="16 - Alger">16 - Alger</option>
+                            <option value="31 - Oran">31 - Oran</option>
+                            <option value="25 - Constantine">25 - Constantine</option>
+                            <option value="09 - Blida">09 - Blida</option>
+                            <option value="19 - Sétif">19 - Sétif</option>
+                            <option value="35 - Boumerdès">35 - Boumerdès</option>
+                            <option value="Other Wilaya">باقي الولايات (58 ولاية)</option>
+                        </select>
                     </div>
 
-                    <!-- Order Summary Box -->
-                    <div class="p-5 rounded-xl bg-cyber-bg/80 border border-cyber-border space-y-3">
-                        <div class="text-sm font-bold text-cyber-cyan border-b border-cyber-border pb-2" data-i18n="summary_title">ملخص الطلب:</div>
-                        <div class="flex justify-between text-sm text-gray-300">
-                            <span data-i18n="summary_product">سعر المنتج:</span>
-                            <span id="summaryProductPrice" class="font-semibold text-white">0 DA</span>
-                        </div>
-                        <div class="flex justify-between text-sm text-gray-300">
-                            <span data-i18n="summary_shipping">تكلفة الشحن:</span>
-                            <span id="summaryShippingPrice" class="font-semibold text-white">0 DA</span>
-                        </div>
-                        <div class="flex justify-between text-base font-extrabold text-white border-t border-cyber-border pt-2">
-                            <span data-i18n="summary_total">المبلغ الإجمالي عند الاستلام:</span>
-                            <span id="summaryTotalPrice" class="text-cyber-cyan font-black text-lg">0 DA</span>
-                        </div>
+                    <!-- Custom Details Note -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-200 mb-2" data-i18n="label_notes">
+                            تفاصيل القطعة المحددة أو الموديل المطلوب (اختياري)
+                        </label>
+                        <textarea id="custNotes" rows="3" placeholder="مثال: أبحث عن ماركة معينة، موديل سوفتوير محدد، أو معالج جيل أحدث..." class="w-full bg-cyber-bg border border-cyber-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyber-cyan transition-colors"></textarea>
                     </div>
 
                     <!-- Submit Button -->
-                    <button type="submit" class="w-full py-4 rounded-xl font-extrabold text-black bg-gradient-to-r from-cyber-cyan via-cyber-teal to-cyber-cyan hover:opacity-90 transition-all text-lg shadow-lg flex items-center justify-center space-x-3 space-x-reverse">
+                    <button type="submit" class="w-full py-4 rounded-xl font-extrabold text-black bg-gradient-to-r from-cyber-cyan via-cyber-cyan to-cyber-cyan hover:opacity-90 transition-all text-lg shadow-lg flex items-center justify-center space-x-3 space-x-reverse">
                         <i class="fa-solid fa-paper-plane"></i>
-                        <span data-i18n="btn_submit_order">تأكيد الطلب والدفع عند الاستلام</span>
+                        <span data-i18n="btn_submit_inquiry">إرسال الاستفسار والحجز</span>
                     </button>
                 </form>
             </div>
@@ -468,9 +434,9 @@
             <div class="w-16 h-16 bg-cyber-cyan text-black rounded-full flex items-center justify-center text-3xl mx-auto shadow-lg">
                 <i class="fa-solid fa-check"></i>
             </div>
-            <h3 class="text-2xl font-black text-white" data-i18n="modal_title">تم استقبال طلبك بنجاح!</h3>
+            <h3 class="text-2xl font-black text-white" data-i18n="modal_title">تم تسجيل استفسارك بنجاح!</h3>
             <p class="text-sm text-gray-300 leading-relaxed" data-i18n="modal_desc">
-                شكراً لتسوقك من ZIROX DZTtech. وسنقوم بالاتصال بك هاتفياً لتأكيد العنوان والشحن قبل إرسال الطرد.
+                شكراً لتواصلك مع ZIROX DZTtech. وسنقوم بالاتصال بك هاتفياً لتزويدك بالتفاصيل والأسعار عند التوفر.
             </p>
             <button onclick="closeModal()" class="w-full py-3 rounded-xl bg-cyber-cyan text-black font-extrabold hover:bg-white transition-colors" data-i18n="modal_btn">
                 حسناً، فهمت
@@ -480,313 +446,241 @@
 
     <!-- Footer -->
     <footer class="bg-cyber-bg border-t border-cyber-border py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-right">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-right">
                 <div>
-                    <span class="text-2xl font-black tracking-wider text-white">ZIROX <span class="text-cyber-cyan">DZT</span><span class="text-cyber-pink">tech</span></span>
-                    <p class="text-xs text-gray-400 mt-2" data-i18n="footer_tagline">متجر العتاد الرقمي ومعدات ألعاب الفيديو في الجزائر.</p>
+                    <span class="text-2xl font-black text-white">ZIROX <span class="text-cyber-cyan">DZT</span><span class="text-cyber-pink">tech</span></span>
+                    <p class="text-xs text-gray-400 mt-2" data-i18n="footer_tag">متجر اكسسوارات وعتاد الألعاب الأصلية في الجزائر</p>
                 </div>
-
-                <div class="flex justify-center space-x-6 space-x-reverse text-gray-400 text-2xl">
-                    <i class="fa-solid fa-truck-ramp-box hover:text-cyber-cyan transition-colors"></i>
-                    <i class="fa-solid fa-shield-cat hover:text-cyber-pink transition-colors"></i>
-                    <i class="fa-solid fa-money-bill-wave hover:text-cyber-teal transition-colors"></i>
+                <div class="flex justify-center space-x-6 space-x-reverse text-xl text-gray-400">
+                    <a href="#" class="hover:text-cyber-cyan transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-cyber-pink transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-cyber-cyan transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="hover:text-cyber-purple transition-colors"><i class="fa-brands fa-discord"></i></a>
                 </div>
-
-                <div class="text-xs text-gray-400 space-y-1">
-                    <p><i class="fa-solid fa-envelope text-cyber-cyan mr-1"></i> contact@ziroxdzttech.dz</p>
-                    <p><i class="fa-solid fa-phone text-cyber-pink mr-1"></i> Support: +213 (0) 550 00 00 00</p>
-                    <p class="text-gray-400 pt-2">© 2026 ZIROX DZTtech. All rights reserved.</p>
+                <div class="text-xs text-gray-500 md:text-left">
+                    &copy; 2026 ZIROX DZTtech. All rights reserved.
                 </div>
-
             </div>
         </div>
     </footer>
 
-    <!-- Translation Dictionary & Dynamic Language Switching Script -->
+    <!-- Interactive Script Layer -->
     <script>
-        const i18nData = {
+        const i18n = {
             ar: {
-                dir: 'rtl',
-                lang: 'ar',
-                nav_why: 'لماذا نحن',
-                nav_catalog: 'الكتالوج',
-                nav_order: 'الطلب السريع',
-                header_cod: 'الدفع عند الاستلام',
-                hero_badge: 'المتجر الرسمي في الجزائر • توصيل لـ 58 ولاية',
-                hero_title_1: 'طوّر منصة ألعابك مع',
-                hero_description: 'أفضل قطع الكمبيوتر، كروت الشاشة، المعالجات واكسسوارات الألعاب الأصلية مع ضمان الجودة والدفع عند الاستلام.',
-                hero_cta_order: 'اطلب الآن والدفع عند الاستلام',
-                hero_cta_catalog: 'تصفح المنتجات',
-                stat_wilayas: 'ولاية مع شحن سريع',
-                stat_cod: 'الدفع عند الفحص',
-                stat_guarantee_val: 'أصلي',
-                stat_guarantee: 'عتاد مضمون ومجرب',
-                hero_card_tag: 'تجميعات وتطوير الـ PC',
-                hero_card_warranty: 'ضمان محلي موثوق',
-                hero_card_stock: 'متوفر في المخزون',
-                why_tag: 'خدمة احترافية',
-                why_title: 'لماذا يفضل الجيمرز متجر ZIROX؟',
-                feature_1_title: 'الدفع عند الاستلام',
-                feature_1_desc: 'تسوق بآمان تام. لا تدفع أي شيء حتى تستلم طردك وتتفحصه بنفسك.',
-                feature_2_title: 'توصيل لكل الولايات',
-                feature_2_desc: 'شحن سريع إلى 58 ولاية، مع خيار التوصيل للمنزل أو الاستلام من المكتب.',
-                feature_3_title: 'قطع أصلية 100%',
-                feature_3_desc: 'جميع المنتجات جديدة كلياً وغير مستعملة ومستوردة من الموزعين الرسميين.',
-                feature_4_title: 'دعم وتوافق عتاد الـ PC',
-                feature_4_desc: 'نساعدك في التأكد من توافق القطع مع لوحة الأم والمعالج الخاص بك قبل الشراء.',
-                catalog_tag: 'أحدث الأجهزة المتوفرة',
-                catalog_title: 'قائمة المنتجات الأكثر طلباً',
-                catalog_subtitle: 'اضغط على أي منتج لملء نموذج الطلب فوراً',
-                badge_hot: 'الأكثر طلباً',
-                p1_spec: 'DLSS 3 • Ray Tracing • استهلاك طاقة منخفض',
-                p2_spec: '6 أنوية / 12 مسار • تردد 4.6GHz • AM4',
-                p3_spec: '2x16GB Kit • سرعة 6000MHz • Intel XMP 3.0',
-                p4_spec: 'سرعة قراءة تصل إلى 5000 MB/s • تحميل ألعاب خاطف',
-                currency: 'دج',
-                btn_order_now: 'اطلب الآن',
-                form_tag: 'استمارة الطلب المباشر',
-                form_title: 'تأكيد الطلب - الدفع عند الاستلام',
-                form_subtitle: 'قم بملء معلوماتك وسنتصل بك عبر الهاتف لتأكيد الشحن قبل الإرسال.',
-                label_product: 'اختر المنتج',
-                opt_choose_product: '-- اختر المنتج من القائمة --',
-                label_fullname: 'الاسم واللقب الكامل',
-                label_phone: 'رقم الهاتف',
-                label_wilaya: 'الولاية',
-                opt_choose_wilaya: '-- اختر الولاية --',
-                label_delivery_type: 'نوع التوصيل',
-                opt_home_delivery: 'توصيل إلى باب المنزل (Home)',
-                opt_desk_delivery: 'استلام من المكتب (Stop Desk)',
-                summary_title: 'ملخص الطلب:',
-                summary_product: 'سعر المنتج:',
-                summary_shipping: 'تكلفة الشحن:',
-                summary_total: 'المبلغ الإجمالي عند الاستلام:',
-                btn_submit_order: 'تأكيد الطلب والدفع عند الاستلام',
-                modal_title: 'تم استقبال طلبك بنجاح!',
-                modal_desc: 'شكراً لتسوقك من ZIROX DZTtech. وسنقوم بالاتصال بك هاتفياً لتأكيد العنوان والشحن قبل إرسال الطرد.',
-                modal_btn: 'حسناً، فهمت',
-                footer_tagline: 'متجر العتاد الرقمي ومعدات ألعاب الفيديو في الجزائر.'
+                nav_why: "لماذا نحن",
+                nav_categories: "الأقسام",
+                nav_inquiry: "طلب واستفسار",
+                header_cod: "توصيل لـ 58 ولاية",
+                hero_badge: "وجهة الجيمرز في الجزائر • توصيل لـ 58 ولاية",
+                hero_title_1: "عتاد الألعاب والقطع الأصلية",
+                hero_description: "نوفر لكم أحدث لوحات المفاتيح، السماعات احترافية، الماوسات الدقيقة، بالإضافة إلى المعالجات، لوحات الأم، والرامات الأصلية.",
+                hero_cta_inquiry: "استفسر عن القطع أو احجز طلبيتك",
+                hero_cta_categories: "تصفح أقسام العتاد",
+                stat_wilayas: "ولاية مع شحن سريع",
+                stat_cod: "الدفع عند الاستلام",
+                stat_guarantee_val: "أصلي",
+                stat_guarantee: "منتجات مضمونة ومجربة",
+                hero_icon_1: "Keyboards",
+                hero_icon_2: "Headsets",
+                hero_icon_3: "Mice",
+                hero_icon_4: "CPUs & MBs & RAM",
+                why_tag: "خدمة موثوقة",
+                why_title: "لماذا تختار ZIROX DZTtech؟",
+                feature_1_title: "الدفع عند الاستلام",
+                feature_1_desc: "تسوق بآمان تام. لا تدفع أي شيء حتى تستلم طردك وتتفحصه بنفسك.",
+                feature_2_title: "توصيل لـ 58 ولاية",
+                feature_2_desc: "توصيل سريع وسلس لجميع الولايات إلى باب المنزل أو مكتب الاستلام.",
+                feature_3_title: "منتجات أصلية 100%",
+                feature_3_desc: "معدات وقطع أصلية جديدة بالكامل ومختارة بعناية لعشاق الـ Esports.",
+                feature_4_title: "استشارات وتوافق",
+                feature_4_desc: "نساعدك في اختيار القطع المتوافقة مع جهازك والإجابة على كل استفساراتك.",
+                cat_tag: "تخصصنا الأساسي",
+                cat_title: "الأقسام والمنتجات المتاحة قريباً",
+                cat_subtitle: "اختر القسم الذي تبحث عنه لإرسال طلبك أو الاستفسار عن الموديلات القادمة",
+                status_coming: "قريباً في المخزون",
+                cat_1_title: "Keyboards (لوحات المفاتيح)",
+                cat_1_desc: "لوحات ميكانيكية احترافية، لاسلكية وسلكية، وإضاءة RGB مخصصة للالعاب.",
+                cat_2_title: "Headsets (السماعات)",
+                cat_2_desc: "سماعات رأس تحيط بالصوت الدقيق للـ Esports، مايكرفونات نقية وراحة تامة أثناء اللعب.",
+                cat_3_title: "Gaming Mice (الماوسات)",
+                cat_3_desc: "فأرات ألعاب خفيفة الوزن ذات دقة DPI عالية واستجابة فورية للألعاب التنافسية.",
+                cat_4_title: "CPUs, Motherboards & RAM",
+                cat_4_desc: "معالجات حديثة، لوحات أم متطورة، وذكريات رام عالية السرعة لتطوير جهازك.",
+                btn_inquire_cat: "طلب / استفسار",
+                form_tag: "تواصل مباشر",
+                form_title: "نموذج الطلب والاستفسار عن العتاد",
+                form_subtitle: "أخبرنا بالمنتج أو القطعة التي تريدها، وسنتصل بك فور توفرها مع تفاصيل السعر والشحن.",
+                label_interest: "نوع المنتجات المطلوبة *",
+                opt_choose_interest: "-- اختر الفئة --",
+                label_fullname: "الاسم واللقب الكامل *",
+                label_phone: "رقم الهاتف *",
+                label_wilaya: "الولاية *",
+                opt_choose_wilaya: "-- اختر الولاية --",
+                label_notes: "تفاصيل القطعة المحددة أو الموديل المطلوب (اختياري)",
+                btn_submit_inquiry: "إرسال الاستفسار والحجز",
+                modal_title: "تم تسجيل استفسارك بنجاح!",
+                modal_desc: "شكراً لتواصلك مع ZIROX DZTtech. وسنقوم بالاتصال بك هاتفياً لتزويدك بالتفاصيل والأسعار عند التوفر.",
+                modal_btn: "حسناً، فهمت",
+                footer_tag: "متجر اكسسوارات وعتاد الألعاب الأصلية في الجزائر"
             },
             fr: {
-                dir: 'ltr',
-                lang: 'fr',
-                nav_why: 'Pourquoi Nous',
-                nav_catalog: 'Catalogue',
-                nav_order: 'Commande Rapide',
-                header_cod: 'Paiement à la livraison',
-                hero_badge: 'Boutique Officielle en Algérie • 58 Wilayas',
-                hero_title_1: 'Boostez vos performances avec',
-                hero_description: 'Les meilleurs composants PC, cartes graphiques, processeurs et accessoires gaming authentiques avec garantie et paiement à la livraison.',
-                hero_cta_order: 'Commander (Paiement à la livraison)',
-                hero_cta_catalog: 'Parcourir le catalogue',
-                stat_wilayas: 'Wilayas avec livraison express',
-                stat_cod: 'Paiement à la vérification',
-                stat_guarantee_val: 'Authentique',
-                stat_guarantee: 'Matériel testé & garanti',
-                hero_card_tag: 'Composants & Config PC',
-                hero_card_warranty: 'Garantie locale fiable',
-                hero_card_stock: 'En Stock',
-                why_tag: 'Service Pro',
-                why_title: 'Pourquoi choisir ZIROX DZTtech ?',
-                feature_1_title: 'Paiement à la livraison',
-                feature_1_desc: 'Achetez en toute sécurité. Ne payez rien avant de recevoir et d\'inspecter votre colis.',
-                feature_2_title: 'Livraison 58 Wilayas',
-                feature_2_desc: 'Expédition rapide vers toutes les wilayas (À domicile ou Stop Desk).',
-                feature_3_title: 'Produits 100% Originaux',
-                feature_3_desc: 'Composants sous emballage d\'origine provenant de distributeurs officiels.',
-                feature_4_title: 'Assistance Compatibilité',
-                feature_4_desc: 'Nous vérifions la compatibilité de vos composants avant l\'expédition.',
-                catalog_tag: 'Nouveautés Hardware',
-                catalog_title: 'Nos Produits Populaires',
-                catalog_subtitle: 'Cliquez sur un produit pour remplir le formulaire',
-                badge_hot: 'Top Vente',
-                p1_spec: 'DLSS 3 • Ray Tracing • Basse Consommation',
-                p2_spec: '6 Cœurs / 12 Threads • Boost 4.6GHz • AM4',
-                p3_spec: 'Kit 2x16GB • Vitesse 6000MHz • Intel XMP 3.0',
-                p4_spec: 'Lecture jusqu\'à 5000 MB/s • Chargements ultra-rapides',
-                currency: 'DA',
-                btn_order_now: 'Commander',
-                form_tag: 'Formulaire de Commande',
-                form_title: 'Confirmation de Commande (COD)',
-                form_subtitle: 'Remplissez vos informations. Nous vous appellerons par téléphone pour confirmer la livraison.',
-                label_product: 'Sélectionner le produit',
-                opt_choose_product: '-- Choisir un produit --',
-                label_fullname: 'Nom complet',
-                label_phone: 'Numéro de téléphone',
-                label_wilaya: 'Wilaya',
-                opt_choose_wilaya: '-- Choisir la Wilaya --',
-                label_delivery_type: 'Type de livraison',
-                opt_home_delivery: 'Livraison à domicile (Home)',
-                opt_desk_delivery: 'Retrait au bureau (Stop Desk)',
-                summary_title: 'Résumé de la commande :',
-                summary_product: 'Prix du produit :',
-                summary_shipping: 'Frais de livraison :',
-                summary_total: 'Montant Total à payer :',
-                btn_submit_order: 'Confirmer la commande (COD)',
-                modal_title: 'Commande reçue avec succès !',
-                modal_desc: 'Merci pour votre achat chez ZIROX DZTtech. Notre équipe vous contactera sous peu pour confirmer votre livraison.',
-                modal_btn: 'D\'accord',
-                footer_tagline: 'Votre boutique spécialisée en Hardware et Gaming en Algérie.'
+                nav_why: "Pourquoi Nous",
+                nav_categories: "Catégories",
+                nav_inquiry: "Demande & Info",
+                header_cod: "Livraison 58 Wilayas",
+                hero_badge: "Destination Gamers en Algérie • 58 Wilayas",
+                hero_title_1: "Périphériques & Hardware Gamer",
+                hero_description: "Claviers mécaniques, casques esports, souris de précision, ainsi que processeurs, cartes mères et mémoires RAM d'origine.",
+                hero_cta_inquiry: "Demander une pièce / Réserver",
+                hero_cta_categories: "Parcourir les Catégories",
+                stat_wilayas: "Wilayas livraison rapide",
+                stat_cod: "Paiement à la livraison",
+                stat_guarantee_val: "Original",
+                stat_guarantee: "Matériel vérifié et garanti",
+                hero_icon_1: "Claviers",
+                hero_icon_2: "Casques",
+                hero_icon_3: "Souris",
+                hero_icon_4: "CPU / CM / RAM",
+                why_tag: "Service Fiable",
+                why_title: "Pourquoi ZIROX DZTtech ?",
+                feature_1_title: "Paiement à la Livraison",
+                feature_1_desc: "Achetez en toute sérénité. Ne payez qu'à la réception de votre colis.",
+                feature_2_title: "Livraison 58 Wilayas",
+                feature_2_desc: "Expédition rapide vers toutes les wilayas, à domicile ou en point relais.",
+                feature_3_title: "100% Produits Originaux",
+                feature_3_desc: "Équipements neufs authentiques sélectionnés pour les passionnés d'esport.",
+                feature_4_title: "Conseils & Compatibilité",
+                feature_4_desc: "Nous vous guidons pour choisir le matériel parfaitement adapté à votre PC.",
+                cat_tag: "Notre Spécialité",
+                cat_title: "Nos Catégories Bientôt Disponibles",
+                cat_subtitle: "Sélectionnez une catégorie pour nous envoyer votre demande ou réserver vos pièces.",
+                status_coming: "Arrivage Bientôt",
+                cat_1_title: "Claviers Gamer",
+                cat_1_desc: "Claviers mécaniques, filaires et sans fil, avec rétroéclairage RGB.",
+                cat_2_title: "Casques Esports",
+                cat_2_desc: "Casques audio surround avec micro haute clarté pour l'esport.",
+                cat_3_title: "Souris de Précision",
+                cat_3_desc: "Souris ultra-légères à haut DPI pour une réactivité maximale en jeu.",
+                cat_4_title: "Processeurs, CM & RAM",
+                cat_4_desc: "Processeurs récents, cartes mères et mémoires RAM haute vitesse.",
+                btn_inquire_cat: "Demander / Réserver",
+                form_tag: "Contact Direct",
+                form_title: "Formulaire de Demande & Réreservation",
+                form_subtitle: "Indiquez-nous le matériel recherché et nous vous contacterons dès disponibilité.",
+                label_interest: "Catégorie Souhaitée *",
+                opt_choose_interest: "-- Choisir la catégorie --",
+                label_fullname: "Nom et Prénom *",
+                label_phone: "Numéro de Téléphone *",
+                label_wilaya: "Wilaya *",
+                opt_choose_wilaya: "-- Choisir la wilaya --",
+                label_notes: "Détails du modèle ou spécifications (Optionnel)",
+                btn_submit_inquiry: "Envoyer la Demande",
+                modal_title: "Demande Enregistrée avec Succès !",
+                modal_desc: "Merci d'avoir contacté ZIROX DZTtech. Notre équipe vous rappellera rapidement pour vous donner les tarifs et détails.",
+                modal_btn: "D'accord, compris",
+                footer_tag: "Boutique officielle de périphériques et composants gamer en Algérie"
             },
             en: {
-                dir: 'ltr',
-                lang: 'en',
-                nav_why: 'Why Us',
-                nav_catalog: 'Catalog',
-                nav_order: 'Express Order',
-                header_cod: 'Cash on Delivery',
-                hero_badge: 'Official Algeria Store • 58 Wilayas COD',
-                hero_title_1: 'Power Up Your Gaming Rig With',
-                hero_description: 'Premier PC hardware, GPUs, CPUs, and gaming accessories with guaranteed quality and 100% Cash on Delivery protection.',
-                hero_cta_order: 'Order Now (Cash on Delivery)',
-                hero_cta_catalog: 'Explore Catalog',
-                stat_wilayas: 'Wilayas Express Delivery',
-                stat_cod: 'Pay Upon Inspection',
-                stat_guarantee_val: 'Genuine',
-                stat_guarantee: 'Tested & Verified Gear',
-                hero_card_tag: 'PC Building & Upgrades',
-                hero_card_warranty: 'Local Warranty',
-                hero_card_stock: 'In Stock Today',
-                why_tag: 'Pro Service',
-                why_title: 'Why Gamers Choose ZIROX DZTtech',
-                feature_1_title: 'Cash on Delivery',
-                feature_1_desc: 'Zero risk. Pay in cash directly to the courier when your parcel arrives at your doorstep.',
-                feature_2_title: '58 Wilayas Express',
-                feature_2_desc: 'Fast delivery across all Algerian wilayas (Home delivery or Stop Desk pickup).',
-                feature_3_title: '100% Authentic Gear',
-                feature_3_desc: 'Brand new, sealed hardware sourced directly from official wholesale distributors.',
-                feature_4_title: 'Hardware Compatibility',
-                feature_4_desc: 'Our team double-checks motherboard and CPU compatibility before shipping.',
-                catalog_tag: 'In-Stock Hardware',
-                catalog_title: 'Top Requested Tech',
-                catalog_subtitle: 'Select any item to auto-fill the order form below',
-                badge_hot: 'Hot Seller',
-                p1_spec: 'DLSS 3 • Ray Tracing • Low Power Draw',
-                p2_spec: '6 Cores / 12 Threads • 4.6GHz Boost • AM4',
-                p3_spec: '2x16GB Kit • 6000MHz Speed • Intel XMP 3.0',
-                p4_spec: 'Up to 5000 MB/s Read Speed • Fast Game Load Times',
-                currency: 'DZD',
-                btn_order_now: 'Order Now',
-                form_tag: 'Direct Express Form',
-                form_title: 'Cash on Delivery Checkout',
-                form_subtitle: 'Fill in your shipping details. We will phone you to confirm your order before dispatching.',
-                label_product: 'Select Product',
-                opt_choose_product: '-- Choose Hardware --',
-                label_fullname: 'Full Name',
-                label_phone: 'Phone Number',
-                label_wilaya: 'Wilaya',
-                opt_choose_wilaya: '-- Select Wilaya --',
-                label_delivery_type: 'Delivery Type',
-                opt_home_delivery: 'Home Delivery',
-                opt_desk_delivery: 'Stop Desk Pickup',
-                summary_title: 'Order Summary:',
-                summary_product: 'Product Price:',
-                summary_shipping: 'Delivery Fee:',
-                summary_total: 'Total Amount on Delivery:',
-                btn_submit_order: 'Confirm Cash on Delivery Order',
-                modal_title: 'Order Received Successfully!',
-                modal_desc: 'Thank you for choosing ZIROX DZTtech. Our agent will call your phone number shortly to confirm shipping details.',
-                modal_btn: 'Got it, thanks!',
-                footer_tagline: 'Premier computer hardware & esports gaming store in Algeria.'
+                nav_why: "Why Us",
+                nav_categories: "Categories",
+                nav_inquiry: "Inquiry & Order",
+                header_cod: "58 Wilayas Shipping",
+                hero_badge: "Algeria Gaming Destination • 58 Wilayas",
+                hero_title_1: "Gaming Gear & Hardware Essentials",
+                hero_description: "Pro mechanical keyboards, gaming headsets, precision mice, plus genuine CPUs, motherboards, and high-speed RAM.",
+                hero_cta_inquiry: "Inquire or Reserve Gear",
+                hero_cta_categories: "Explore Categories",
+                stat_wilayas: "Wilayas Fast Delivery",
+                stat_cod: "Cash on Delivery",
+                stat_guarantee_val: "Original",
+                stat_guarantee: "Authentic & Verified Hardware",
+                hero_icon_1: "Keyboards",
+                hero_icon_2: "Headsets",
+                hero_icon_3: "Mice",
+                hero_icon_4: "CPUs / MBs / RAM",
+                why_tag: "Trusted Service",
+                why_title: "Why Choose ZIROX DZTtech?",
+                feature_1_title: "Cash on Delivery",
+                feature_1_desc: "Shop risk-free. Pay only when you receive and inspect your item.",
+                feature_2_title: "58 Wilayas Shipping",
+                feature_2_desc: "Fast delivery to all Algerian provinces straight to your door or pickup station.",
+                feature_3_title: "100% Original Products",
+                feature_3_desc: "Brand-new gear carefully picked for competitive gamers and enthusiasts.",
+                feature_4_title: "Compatibility Advice",
+                feature_4_desc: "We help you select hardware components compatible with your setup.",
+                cat_tag: "Our Focus",
+                cat_title: "Featured Gear Categories",
+                cat_subtitle: "Choose a category below to inquire about upcoming stock or request specific models.",
+                status_coming: "Stock Arriving Soon",
+                cat_1_title: "Gaming Keyboards",
+                cat_1_desc: "Mechanical, wireless, and wired gaming keyboards with customizable RGB.",
+                cat_2_title: "Esports Headsets",
+                cat_2_desc: "Surround sound gaming headsets with clear noise-canceling microphones.",
+                cat_3_title: "Precision Mice",
+                cat_3_desc: "Ultra-lightweight gaming mice with high DPI sensors for competitive gaming.",
+                cat_4_title: "CPUs, Motherboards & RAM",
+                cat_4_desc: "Latest processors, gaming motherboards, and fast RAM modules to upgrade your rig.",
+                btn_inquire_cat: "Inquire / Reserve",
+                form_tag: "Direct Contact",
+                form_title: "Hardware Inquiry & Pre-Order Form",
+                form_subtitle: "Tell us what item you are looking for, and we will call you as soon as stock lands.",
+                label_interest: "Product Category *",
+                opt_choose_interest: "-- Select Category --",
+                label_fullname: "Full Name *",
+                label_phone: "Phone Number *",
+                label_wilaya: "Wilaya / Province *",
+                opt_choose_wilaya: "-- Select Wilaya --",
+                label_notes: "Specific Model or Hardware Notes (Optional)",
+                btn_submit_inquiry: "Submit Inquiry",
+                modal_title: "Inquiry Received Successfully!",
+                modal_desc: "Thank you for reaching out to ZIROX DZTtech. We will contact you by phone with pricing and availability details.",
+                modal_btn: "Got It",
+                footer_tag: "Algeria's Destination for Genuine Gaming Peripherals & Hardware"
             }
         };
 
-        let currentLang = 'ar';
-
         function setLanguage(lang) {
-            currentLang = lang;
-            const data = i18nData[lang];
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
-            // Update HTML dir and lang
-            document.documentElement.dir = data.dir;
-            document.documentElement.lang = data.lang;
-
-            // Apply font family based on language
-            if (lang === 'ar') {
-                document.body.classList.remove('font-latin');
-                document.body.classList.add('font-arabic');
-            } else {
-                document.body.classList.remove('font-arabic');
-                document.body.classList.add('font-latin');
-            }
-
-            // Update Text Nodes
-            document.querySelectorAll('[data-i18n]').forEach(element => {
-                const key = element.getAttribute('data-i18n');
-                if (data[key]) {
-                    element.textContent = data[key];
-                }
-            });
-
-            // Update Active Button Styling
             ['ar', 'fr', 'en'].forEach(l => {
                 const btn = document.getElementById(`btn-${l}`);
                 if (l === lang) {
-                    btn.className = 'px-2.5 py-1 text-xs font-bold rounded-lg transition-all bg-cyber-cyan text-black shadow-md';
+                    btn.className = "px-2.5 py-1 text-xs font-bold rounded-lg transition-all bg-cyber-cyan text-black";
                 } else {
-                    btn.className = 'px-2.5 py-1 text-xs font-bold rounded-lg transition-all text-gray-400 hover:text-white';
+                    btn.className = "px-2.5 py-1 text-xs font-bold rounded-lg transition-all text-gray-400 hover:text-white";
                 }
             });
 
-            // Adjust icon directions if needed
-            const ltrIcons = document.querySelectorAll('.ltr-icon');
-            ltrIcons.forEach(icon => {
-                if (lang === 'ar') {
-                    icon.classList.remove('fa-arrow-right');
-                    icon.classList.add('fa-arrow-left');
-                } else {
-                    icon.classList.remove('fa-arrow-left');
-                    icon.classList.add('fa-arrow-right');
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang] && i18n[lang][key]) {
+                    el.innerText = i18n[lang][key];
                 }
             });
-
-            updateSummary();
         }
 
-        function selectProduct(productName, price) {
-            const selectElem = document.getElementById('productSelect');
-            for (let i = 0; i < selectElem.options.length; i++) {
-                if (selectElem.options[i].value === productName) {
-                    selectElem.selectedIndex = i;
+        function selectCategory(catName) {
+            const select = document.getElementById('interestSelect');
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].value.includes(catName) || catName.includes(select.options[i].value)) {
+                    select.selectedIndex = i;
                     break;
                 }
             }
-            updateSummary();
-            document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('inquiry').scrollIntoView({ behavior: 'smooth' });
         }
 
-        function updateSummary() {
-            const productSelect = document.getElementById('productSelect');
-            const wilayaSelect = document.getElementById('wilayaSelect');
-            const curr = i18nData[currentLang].currency;
-
-            const selectedProdOpt = productSelect.options[productSelect.selectedIndex];
-            const selectedWilOpt = wilayaSelect.options[wilayaSelect.selectedIndex];
-
-            const prodPrice = selectedProdOpt && selectedProdOpt.getAttribute('data-price') ? parseInt(selectedProdOpt.getAttribute('data-price')) : 0;
-            const shipPrice = selectedWilOpt && selectedWilOpt.getAttribute('data-shipping') ? parseInt(selectedWilOpt.getAttribute('data-shipping')) : 0;
-            const totalPrice = prodPrice + shipPrice;
-
-            document.getElementById('summaryProductPrice').textContent = `${prodPrice.toLocaleString()} ${curr}`;
-            document.getElementById('summaryShippingPrice').textContent = `${shipPrice.toLocaleString()} ${curr}`;
-            document.getElementById('summaryTotalPrice').textContent = `${totalPrice.toLocaleString()} ${curr}`;
-        }
-
-        function handleOrderSubmit(event) {
+        function handleInquirySubmit(event) {
             event.preventDefault();
             document.getElementById('successModal').classList.remove('hidden');
         }
 
         function closeModal() {
             document.getElementById('successModal').classList.add('hidden');
-            document.getElementById('codOrderForm').reset();
-            updateSummary();
-        }
-
-        // Initialize Arabic on load
-        window.onload = function() {
-            setLanguage('ar');
+            document.getElementById('inquiryForm').reset();
         }
     </script>
 </body>
